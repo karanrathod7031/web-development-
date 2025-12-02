@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-wrap: inherit;
+    /* border: 2px solid rgb(246, 82, 109); */
+    margin: 0%;
+    padding: 0%;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* word-wrap: normal; */
+    border-radius: 8px 8px;
+    box-shadow: back 2px 3px 4px;
+    /* margin: 8px 8px; */
+    background-color: rgb(225, 225, 225);
+
+   /* font-size: 2px; */
+    
+}
+
+h2 {
+    background-color: aquamarine;
+    /* border: 1px solid rgb(230, 239, 230); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+    border-radius: 8px;
+}
+
+h3 {
+    inset-block: inherit;
+    margin-bottom: 2px;
+   
+}
+
+
+
+
+b {
+    color: rgb(37, 6, 73);
+    text-decoration: double;
+    text-transform: capitalize;
+    padding: auto;
+}
+
+i {
+    color: green;
+
+}
+
+
+hr {
+    border: 1px solid rgb(79, 79, 79);
+    margin: 0px 0px;
+}
