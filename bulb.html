@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make bulb</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bulb {
+        width: 200px;
+        height: 200px;
+        background-color: whitesmoke;
+        margin: 20px;
+        border-radius: 50%;
+        /* margin: auto; */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 30px;
+        display: block;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+
+        background-color: black;
+        color: white;
+        border-radius: 34px;
+        box-shadow: 2px 3px 4px red;
+
+
+    }
+</style>
+
+<body>
+    <div class="bulb">
+        <!-- bulb -->
+    </div>
+    <button>off</button>
+
+    <script>
+        let bulb = document.querySelector(".bulb")
+        let btn = document.querySelector("button")
+
+        let flag = 0;
+        btn.addEventListener("click", function () {
+            if (flag == 0) {
+                bulb.style.backgroundColor = "#ffff009e";
+                bulb.style.boxShadow = "#ffff00 0px -16px 374px 284px";
+                flag = 1;
+                console.log("on");
+                btn.innerHTML = "on";
+            }
+            else {
+                bulb.style.backgroundColor = "whitesmoke";
+                bulb.style.boxShadow = "0px 0px 0px 0px red";
+                console.log("off");
+                flag = 0;
+                btn.innerHTML = "off";
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>

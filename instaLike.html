@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Like btn</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+
+        .card {
+            width: 360px;
+            height: 615px;
+            background-color: white;
+            align-items: center;
+            padding: 4px;
+            position: relative;
+
+            border-radius: 10px;
+            justify-content: center;
+            box-shadow: inset 0px 0px 13px 1px darkgreen;
+        }
+
+
+        .card img {
+            width: 98%;
+            object-fit: cover;
+            /* height: 100%; */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            left: 3px;
+            top: 2px;
+            box-shadow: 8px 11px 35px -3px black;
+
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+            /* border: 2px solid red; */
+            background-color: silver;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 15px 1px black
+        }
+
+        .icons i {
+            cursor: pointer;
+            font-size: 40px;
+            margin: 3px 12px;
+        }
+
+        .container #like {
+            transform: translate(-50%, -50%) scale(0);
+            color: white;
+            font-size: 70px;
+            font-weight: 600;
+            margin: 11px 18px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            opacity: 0.8;
+            transition: transform ease-in 0.8;
+        }
+
+        .icons i:hover{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform:translate(-50%, -50%) scale(1.3);
+            opacity: 0.8;
+            color: white;
+            transition: transform  ease-in-out 2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514315384763-ba401779410f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdpcmx8ZW58MHx8MHx8fDA%3D"
+                alt="">
+            <i class="ri-heart-3-fill" id="like"></i>
+
+            <div class="icons">
+                <i class="ri-heart-3-fill" class="i"></i>
+                <i class="ri-send-plane-fill" class="i"></i>
+                <i class="ri-chat-download-fill" class="i"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let con = document.querySelector(".container");
+        let like = document.querySelector("#like");
+
+
+
+        con.addEventListener("dblclick", function () {
+            like.style.transform = "translate(-50%,-50%) scale(1)";
+            console.log("scale -> 1");
+
+
+            setTimeout(function () {
+                like.style.transform = "translate(-50%,-50%) scale(1.2)";
+                console.log("scale -> 1");
+            }, 500);
+
+            setTimeout(function () {
+                like.style.transform = "translate(-50%,-50%) scale(0)";
+                console.log("scale -> 0");
+            }, 2000);
+
+
+            setTimeout(function () {
+                like.style.opacity = "0.9";
+                console.log("opacity -> 0");
+            }, 1000);
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
