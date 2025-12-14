@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traveler</title>
+    <style>
+        body {
+            background-image: url("images/bgm2.jpg");
+            background-repeat: no-repeat, repeat;
+            background-size: 100%;
+            /* color: white; */
+            margin: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .header {
+            /* background-color: aquamarine; */
+            width: 100%;
+            /* height: 100vh; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            /* border: 2px solid black; */
+            margin: 41px 0px 74px 0px;
+
+
+        }
+
+        .box {
+            /* border: 2px solid red; */
+            flex-wrap: wrap;
+        }
+
+        #box1 {
+            width: 10%;
+            align-self: flex-start;
+        }
+
+        #box1 img {
+            width: 53px;
+            align-self: center;
+        }
+
+        #box2 {
+            width: 80%;
+            align-self: flex-start;
+            /* display: flex; */
+
+        }
+
+        #box2 ul {
+            list-style: none;
+            /* background-color: black; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+        }
+
+        #box2 li {
+            padding: 2px 3px;
+            margin: 2px;
+            align-self: center;
+            margin: 0px 34px;
+
+        }
+
+        #box2 ul a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            /* background-color: rgb(161, 170, 170); */
+            margin: 220px 0px 200px 0px;
+            color: white;
+        }
+
+        .text {
+            align-content: center;
+            align-self: center;
+
+        }
+
+        .text h1{
+                  text-align: center;
+    font-size: 7rem;
+    margin: 0px;
+        }
+        .text p {
+            text-align: center;
+            font-size: 2rem;
+                margin: 0px 0px 99px 0px;
+        }
+
+        .inputs {
+            align-self: center;
+            border: 2px solid white;
+            padding: 15px 37px;
+            border-radius: 46px;
+            box-shadow: 1px 13px 32px #a62d2d;
+            background-color: #ffffffab;
+
+        }
+
+        .inputs input {
+            border-radius: 4px;
+            backdrop-filter: none;
+            background: none;
+            margin: 4px 8px;
+            border: none;
+            color: black;
+        }
+
+        .inputs label {
+            color: black;
+        }
+
+
+        .support {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            background-color: #397B53;
+        }
+
+        .support .boxs {
+            width: 33%;
+            height: 10rem;
+            padding: 2px 2px;
+            margin: 9px 53px;
+            align-self: center;
+        }
+
+        .support #box-1 {
+            /* border: 1px solid #00ff4c; */
+        }
+
+        .support #box-2 {
+            /* border: 1px solid blue; */
+        }
+
+        .support #box-3 {
+            /* border: 1px solid yellow; */
+        }
+
+        .boxs h2,
+        .boxs p {
+            text-align:center;
+        }
+
+        .slogun {
+            width: 70%;
+            /* border: 2px solid red; */
+            margin: 40px auto;
+        }
+
+
+        .slogun .p {
+            width: 60%;
+            margin: auto;
+        }
+
+        .slogun p {
+            text-align: center;
+            color: black;
+            font-size: 1px;
+
+        }
+
+        .slogun h2 {
+            font-size: 4rem;
+            text-align: center;
+            margin: 2px;
+        }
+
+        .button {
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .button ul {
+            /* border: 2px solid black; */
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .button .btn a {
+            text-decoration: none;
+            float: left;
+            padding: 17px 19px;
+            background-color: #ffffff;
+            margin: 2px 3px;
+            border-radius: 54px;
+            color: #000000;
+            border: 2px solid black;
+        }
+
+        .button .btn a:hover {
+            background-color: #397B53;
+
+        }
+
+        #id1 {
+            background-color: #397B53;
+
+        }
+
+        .button .btn #id1:visited {
+            color: #600000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="box" id="box1">
+            <img src="images/logo.jpg" alt="logo" id="img">
+        </div>
+
+        <div class="box" id="box2">
+            <ul>
+                <li class="items"><a href="#">features</a></li>
+                <li class="items"><a href="#">how it works</a></li>
+                <li class="items"><a href="#">Price</a></li>
+                <li class="items"><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <form action="post.php" class="form">
+
+        <div class="text">
+            <h1>see the word like local</h1>
+            <p>Find a local guide consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+        </div>
+
+        <div class="inputs">
+            <label for="Distination"><img src="/images/icon5.svg" alt=""></label>
+            <input type="text" name="Distination" id="iptext" placeholder="Distination"><label for="Distination">|</label>
+            <input type="date" name="date" id="date"><label for="date">|</label>
+            <input type="number" name="number" id="num" placeholder="group size"><label for="number"><img src="/images/icon4.svg" alt=""></label>
+        </div>
+    </form>
+
+    <div class="support">
+        <div id="box-1" class="boxs">
+            <h2> <img src="/images/thom.svg" alt="">
+                Hand Picked Guides</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam.</p>
+        </div>
+        <div id="box-2" class="boxs">
+            <h2><img src="/images/icon2.svg" alt="">
+                24/7 Support</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, deleniti.</p>
+        </div>
+        <div id="box-3" class="boxs">
+            <h2> <img src="/images/icon3.svg" alt="">
+                Private Tours</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, quos.</p>
+        </div>
+    </div>
+
+    <div class="slogun">
+        <h2>See the world like a local</h2>
+        <div class="p">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores sequi voluptate, inventore
+                ipsum odit?</p>
+
+        </div>
+    </div>
+
+
+    <div class="button">
+        <ul class="btn">
+            <li><a href="#" id="id1">all</a></li>
+            <li><a href="#">popular</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">treding</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
