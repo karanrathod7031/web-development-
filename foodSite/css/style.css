@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+font-family: "Lato", sans-serif;
+}
+/* nevigation bar  */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    margin: 3px 56px;
+}
+
+#logo img {
+    width: 94px;
+    height: 64px;
+    border-radius: 9px;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.navbar ul li {
+    /* margin: 2px 4px ; */
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    display: block;
+    padding: 6px 15px;
+    margin: 2px 8px;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 0, 0);
+    /* background-color: #1b1212; */
+    /* background-color: rgb(0, 0, 0); */
+}
+
+/* Home section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 34px 200px;
+    height: 479px;
+    margin-bottom: 74px;
+}
+
+#home::before {
+    content: "";
+    background: url('/images/backgraund.jpg')no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* services section  */
+/* .services-container::before{
+ 
+
+} */
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+        margin: 31px 0px;
+
+}
+/* .services::before{
+       content: "";
+    background: url('/images/bg2.jpg')no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+} */
+
+
+
+.box {
+    border: 2px solid red;
+    margin: 18px 8px;
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    /* height: 229px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background-color: antiquewhite;
+}
+
+.box img {
+    width: 106px;
+    height: 106px;
+    border-radius: 58px;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+
+/* products section */
+.products::before{
+content: "";
+background-color: azure;
+}
+
+#product {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 21px; */
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+
+#product .box {
+    /* height: 300px; */
+    /* width: ; */
+    background-color: #f1b7b7;
+    box-shadow: 6px 7px 26px -17px black;
+}
+
+
+#product .box img {
+    /* height: 139px; */
+    width: 34;
+}
+
+#product .button .btn {
+    padding: 2px 3px;
+    font-size: 1.3rem;
+    background-color: rgb(217 116 116);
+    color: rgb(220 220 220);
+    border-radius: 10px;
+    margin: 10px 8px;
+    border: green;
+    cursor: pointer;
+    box-shadow: -2px 1px 23px -8px #1b1212;
+
+}
+
+#product .button .btn:hover {
+    background-color: #d90000;
+}
+
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 143, 248);
+    
+}
+
+form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+form input,textarea{
+    /* padding: 4px 150px; */
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+/* utility classes  */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 3px 4px;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2.8;
+    padding: 3px 4px;
+    text-align: center;
+}
+
+.para {
+    font-size: 1.3rem;
+    text-align: center;
+    color: black;
+
+    /* padding: 1px 51px 23px; */
+    /* text-align: center; */
+}
+
+.btn {
+    padding: 5px 22px;
+    font-size: 1.3rem;
+    background-color: #ff1818;
+    color: white;
+    border-radius: 20px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(218, 82, 61);
+
+    /* color: #565656; */
+}
+
+
+
+
+/* p {
+} */
+
+
+
+/* #product::before {
+    content: "";
+
+    background: url('/images/bg2.jpg')no-repeat center center/cover;
+    position: absolute;
+
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+} */
+

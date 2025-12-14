@@ -1,0 +1,32 @@
+#home{
+    padding: 0px;
+    padding: 4px;
+    margin-top: 100px;
+}
+
+
+.navbar {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar ul li a {
+   
+    padding: 0px;
+}
+
+
+
+#home{
+    flex-wrap: wrap;
+}
+
+.box{
+    width: auto;
+}
+
+.services .box{
+    width: auto;
+}
+
